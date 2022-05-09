@@ -1,0 +1,141 @@
+.header-soporte {
+  background-image: url(../../assets/images/background-soporte.jpg);
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.glass-suport {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  background: hsl(var(--clr-white) / 0.05);
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#img-portada {
+  display: none;
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.items:last-child {
+  margin-top: 20px;
+}
+
+.item-portada {
+  width: 80%;
+  height: 165px;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+}
+
+.item-portada:first-child {
+  margin-right: 10px;
+}
+
+.item-portada > span {
+  display: block;
+}
+
+.item-portada > i {
+  font-size: 60px;
+}
+
+.container {
+  margin: auto;
+}
+
+.inner-container-sup{
+  margin: 5em 0px;
+}
+
+.container .inner-container-sup > h2 {
+  margin-bottom: 1rem;
+}
+
+ul{
+  padding-inline-start: 20px;
+}
+
+@media (min-width: 450px) {
+  .item-portada:first-child {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 520px) {
+  .glass-suport {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .glass-suport {
+    margin-top: 3rem;
+  }
+
+  .item-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .items:last-child {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .items {
+    width: 100%;
+  }
+
+  .item-portada {
+    height: 188px;
+  }
+
+  ul{
+    padding-inline-start: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .glass-suport {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .card-glass{
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .item-portada {
+    width: 40%;
+  }
+
+  .items {
+    margin-top: 20px !important;
+  }
+
+  .items:last-child {
+    margin-left: 0px;
+  }
+}

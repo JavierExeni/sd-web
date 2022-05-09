@@ -41,7 +41,7 @@
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
+    --fs-400: 1.4rem;
   }
 }
 
@@ -223,6 +223,10 @@ select {
   text-transform: uppercase;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .fs-900 {
   font-size: var(--fs-900);
 }
@@ -272,6 +276,12 @@ select {
 
 .logo {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  width: 100px;
+}
+
+.logo-show{
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  width: 150px;
 }
 
 .primary-header {
@@ -358,6 +368,11 @@ select {
 }
 
 @media (min-width: 45em) {
+  .logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    width: 100%;
+  }
+
   .primary-header::after {
     content: "";
     display: block;
@@ -375,6 +390,50 @@ select {
 
   .primary-navigation {
     margin-block: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    width: 400px;
+  }
+
+}
+
+/* Header Down */
+.header-down{
+  display: none;
+}
+
+.dis-none {
+  display: none;
+  visibility: hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+@media (min-width: 1024px) {
+
+  .header-down {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible;
+    position: fixed;
+    opacity:1;
+    z-index: 2000000;
+    background: hsl(var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
+  }
+
+  .header-down .primary-navigation {
+    margin: 0px;
+    background: none;
+    backdrop-filter: blur(0);
+    --underline-gap: 1.5rem;
   }
 }
 
@@ -476,6 +535,8 @@ header h1 {
     margin-top: 30px;
   }
 }
+
+
 
 @media (min-width: 1024px) {
   .glass {
@@ -930,6 +991,7 @@ header h1 {
 .main-card .cards .card{
   width: calc(100% / 3 - 10px);
   background: #fff;
+  filter: blur(0px);
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -1055,7 +1117,7 @@ input[type="radio"]{
 }
 
 .footer .grupo-1 .box figure img {
-  width: 250px;
+  width: 100%;
 }
 
 .footer .grupo-1 .box h2 {
@@ -1126,4 +1188,3 @@ input[type="radio"]{
 .button:hover {
   background-color: #fd3838;
 }
-
