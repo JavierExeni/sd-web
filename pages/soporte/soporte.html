@@ -24,14 +24,23 @@
     <title>Soluciones Digitales</title>
   </head>
   <body>
+    <div id="preloader">
+      <div class="center">
+        <div class="ring"></div>
+        <span>Cargando...</span>
+      </div>
+    </div>
+    
     <header class="header-soporte">
       <div class="primary-header flex">
-        <div>
-          <img
-            src="../../assets/images/sd.png"
-            alt="space tourism logo"
-            class="logo"
-          />
+        <div class="image-logo">
+          <a href="../../index.html">
+            <img
+              src="../../assets/images/sd.png"
+              alt="space tourism logo"
+              class="logo"
+            />
+          </a>
         </div>
 
         <button class="mobile-nav-toggle" aria-controls="primary-navigation">
@@ -46,21 +55,21 @@
             <li class="active">
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="index.html"
+                href="../../index.html#nosotros"
                 ><span>01</span>Nosotros</a
               >
             </li>
             <li>
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="destination.html"
+                href="../../index.html#servicios"
                 ><span>02</span>Servicios</a
               >
             </li>
             <li>
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="crew.html"
+                href="../../index.html#contactos"
                 ><span>03</span>Contacto</a
               >
             </li>
@@ -112,11 +121,13 @@
 
     <nav id="header-down" class="dis-none flex">
       <div>
-        <img
-        src="../../assets/images/sd.png"
-        alt="space tourism logo"
-        class="logo-show"
-      />
+        <a href="../../index.html">
+          <img
+            src="../../assets/images/sd.png"
+            alt="space tourism logo"
+            class="logo-show"
+          />
+        </a>
       </div>
       <nav>
         <ul
@@ -127,167 +138,171 @@
           <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="index.html"
+              href="../../index.html#nosotros"
               ><span>01</span>Nosotros</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="destination.html"
+              href="../../index.html#servicios"
               ><span>02</span>Servicios</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="crew.html"
+              href="../../index.html#contactos"
               ><span>03</span>Contacto</a
             >
           </li>
         </ul>
       </nav>
     </nav>
+    <div class="back">
+      <main class="container">
+        <article class="inner-container-sup">
+          <h2 class="title uppercase fs-700">Asistencia Remota</h2>
+          <div class="card-glass">
+            <p>
+              Ocasionalmente los dispositivos sufren inconvenientes que no
+              requieren de la presencia directa de un ingeniero para
+              solucionarse. El procedimiento de Asistencia Remota permite a los
+              clientes recibir asistencia a problemas a distancia por medio
+              telefónico o por mensajería.
+            </p>
+            <br />
+            <p>
+              El proceso para recibir una asistencia remota consiste en
+              contactarse por medio de una llamada o de cualquier servicio de
+              mensajería con nuestras oficinas donde será atendido por un/a
+              operador/a que identificará el problema y le dará las indicaciones
+              necesarias para resolverlo.
+            </p>
+            <br />
+            <p>
+              Los problemas más comunes que se pueden resolver con una
+              asistencia en sitio:
+            </p>
+            <ul>
+              <li>No abre alguna aplicación de la computadora.</li>
+              <li>La computadora se pone lenta de repente.</li>
+              <li>No abre o no funciona algún documento de ofice.</li>
+              <li>No se puede ingresar a alguna carpeta.</li>
+              <li>Hay una pestaña recurrente.</li>
+            </ul>
+            <p>
+              En caso de que el inconveniente no pueda ser atendido o resuelto
+              por medio de una asistencia a distancia, se procederá con una
+              asistencia en sitio.
+            </p>
+          </div>
+        </article>
 
-    <main class="container">
-      <article class="inner-container-sup">
-        <h2 class="title uppercase fs-700">Asistencia Remota</h2>
-        <div class="card-glass">
-          <p>
-            Ocasionalmente los dispositivos sufren inconvenientes que no
-            requieren de la presencia directa de un ingeniero para solucionarse.
-            El procedimiento de Asistencia Remota permite a los clientes recibir
-            asistencia a problemas a distancia por medio telefónico o por
-            mensajería.
-          </p>
-          <br />
-          <p>
-            El proceso para recibir una asistencia remota consiste en
-            contactarse por medio de una llamada o de cualquier servicio de
-            mensajería con nuestras oficinas donde será atendido por un/a
-            operador/a que identificará el problema y le dará las indicaciones
-            necesarias para resolverlo.
-          </p>
-          <br />
-          <p>
-            Los problemas más comunes que se pueden resolver con una asistencia
-            en sitio:
-          </p>
-          <ul>
-            <li>No abre alguna aplicación de la computadora.</li>
-            <li>La computadora se pone lenta de repente.</li>
-            <li>No abre o no funciona algún documento de ofice.</li>
-            <li>No se puede ingresar a alguna carpeta.</li>
-            <li>Hay una pestaña recurrente.</li>
-          </ul>
-          <p>
-            En caso de que el inconveniente no pueda ser atendido o resuelto por
-            medio de una asistencia a distancia, se procederá con una asistencia
-            en sitio.
-          </p>
-        </div>
-      </article>
+        <article class="inner-container-sup">
+          <h2 class="title uppercase fs-700">Asistencia en Sitio</h2>
+          <div class="card-glass">
+            <p>
+              En caso de que algún problema no pueda ser resuelto por medio de
+              una llamada, el servicio de Soporte I.T. procederá a una
+              Asistencia en Sitio, que consiste en la presencia directa de un
+              ingeniero para analizar su dispositivo y verficar si se requiere
+              del remplazo, limpieza o reparación de algún componente. Para
+              recibir una asistencia en sitio, primeramente, debe comunicarse
+              con nuestras oficinas e informar del problema a un/a operador/a
+              que le asignará un especialista que asistirá al lugar para
+              analizar la falla. Una vez que el ingeniero haya encontrado el
+              origen del problema, se le informará el procedimiento que se
+              requerirá para repararlo lo antes posible y de la manera más
+              segura.
+            </p>
+            <br />
+            <p>
+              Los problemas más comunes que requieren de una asistencia en sitio
+              son:
+            </p>
+            <ul>
+              <li>No enciende la computadora.</li>
+              <li>Se cortó el acceso a internet.</li>
+              <li>Se borró información digital valiosa</li>
+              <li>No funciona el mouse/teclado/monitor.</li>
+              <li>La computadora se colgó y dejó de funcionar</li>
+            </ul>
+          </div>
+        </article>
 
-      <article class="inner-container-sup">
-        <h2 class="title uppercase fs-700">Asistencia en Sitio</h2>
-        <div class="card-glass">
-          <p>
-            En caso de que algún problema no pueda ser resuelto por medio de una
-            llamada, el servicio de Soporte I.T. procederá a una Asistencia en
-            Sitio, que consiste en la presencia directa de un ingeniero para
-            analizar su dispositivo y verficar si se requiere del remplazo,
-            limpieza o reparación de algún componente. Para recibir una
-            asistencia en sitio, primeramente, debe comunicarse con nuestras
-            oficinas e informar del problema a un/a operador/a que le asignará
-            un especialista que asistirá al lugar para analizar la falla. Una
-            vez que el ingeniero haya encontrado el origen del problema, se le
-            informará el procedimiento que se requerirá para repararlo lo antes
-            posible y de la manera más segura.
-          </p>
-          <br />
-          <p>
-            Los problemas más comunes que requieren de una asistencia en sitio
-            son:
-          </p>
-          <ul>
-            <li>No enciende la computadora.</li>
-            <li>Se cortó el acceso a internet.</li>
-            <li>Se borró información digital valiosa</li>
-            <li>No funciona el mouse/teclado/monitor.</li>
-            <li>La computadora se colgó y dejó de funcionar</li>
-          </ul>
-        </div>
-      </article>
+        <article class="inner-container-sup">
+          <h2 class="title uppercase fs-700">
+            Mantenimientos Preventivos/ Correctivos
+          </h2>
+          <div class="card-glass">
+            <p>
+              Aparte de las asistencias a problemas, el servicio Soporte I.T.
+              cuenta con la posibilidad de adquirir paquetes de mantenimientos
+              preventivos/correctivos, que consisten en la revisión mensual de
+              sus equipos para asegurar su buen funcionamiento y evitar
+              cualquier falla futura, garantizando seguridad con sus
+              dispositivos y su información empresarial.
+            </p>
+            <br />
+            <p>
+              Las tareas de los mantenimientos preventivos/correctivos incluyen
+              acciones como informar la existencia de piezas deterioradas y su
+              respectivo reemplazo en caso de que el usuario lo autorice.
+            </p>
+            <p>
+              Para conocer los paquetes de mantenimientos que ofrece SD,
+              contacta con nuestras oficinas en la sección de CONTACTO.
+            </p>
+          </div>
+        </article>
 
-      <article class="inner-container-sup">
-        <h2 class="title uppercase fs-700">
-          Mantenimientos Preventivos/ Correctivos
-        </h2>
-        <div class="card-glass">
-          <p>
-            Aparte de las asistencias a problemas, el servicio Soporte I.T.
-            cuenta con la posibilidad de adquirir paquetes de mantenimientos
-            preventivos/correctivos, que consisten en la revisión mensual de sus
-            equipos para asegurar su buen funcionamiento y evitar cualquier
-            falla futura, garantizando seguridad con sus dispositivos y su
-            información empresarial.
-          </p>
-          <br />
-          <p>
-            Las tareas de los mantenimientos preventivos/correctivos incluyen
-            acciones como informar la existencia de piezas deterioradas y su
-            respectivo reemplazo en caso de que el usuario lo autorice.
-          </p>
-          <p>
-            Para conocer los paquetes de mantenimientos que ofrece SD, contacta
-            con nuestras oficinas en la sección de CONTACTO.
-          </p>
-        </div>
-      </article>
-
-      <article class="inner-container-sup">
-        <h2 class="title uppercase fs-700">Asesorías en Teconologías</h2>
-        <div class="card-glass">
-          <p>
-            El Servicio de Soporte I.T. les ofrece a las empresas la oportunidad
-            de recibir asesorías sobre dispositivos tecnológicos. SD te mantiene
-            informado de qué computadora o componente se adecúa a tu área de
-            trabajo y en las maneras de aprovechar todas las funcionalidades que
-            éstos puedan tener.
-          </p>
-          <br />
-          <p>Las asesorías más comunes son:</p>
-          <ul>
-            <li>
-              ¿Qué computadora/portátil/celular debería comprar para mi área de
-              trabajo?
-            </li>
-            <li>¿Windows, Linux o Mac para mi área de trabajo?</li>
-            <li>
-              ¿Cuál será el mejor mouse/teclado/monitor para mis actividades
-              empresariales?
-            </li>
-            <li>¿Qué aplicaciones facilitarían los procesos de mi empresa?</li>
-          </ul>
-          <br />
-          <p>
-            SD cuenta con conocimientos actualizados y comprobados sobre
-            funciones, características y actualizaciones de aplicaciones
-            (Software) o componentes tecnológicos (Hardware), facilitándoles a
-            los clientes la toma de decisiones complicadas y evitándoles el
-            cometer errores como una mala compra o gastos innecesarios.
-          </p>
-        </div>
-      </article>
-    </main>
-
+        <article class="inner-container-sup">
+          <h2 class="title uppercase fs-700">Asesorías en Teconologías</h2>
+          <div class="card-glass">
+            <p>
+              El Servicio de Soporte I.T. les ofrece a las empresas la
+              oportunidad de recibir asesorías sobre dispositivos tecnológicos.
+              SD te mantiene informado de qué computadora o componente se adecúa
+              a tu área de trabajo y en las maneras de aprovechar todas las
+              funcionalidades que éstos puedan tener.
+            </p>
+            <br />
+            <p>Las asesorías más comunes son:</p>
+            <ul>
+              <li>
+                ¿Qué computadora/portátil/celular debería comprar para mi área
+                de trabajo?
+              </li>
+              <li>¿Windows, Linux o Mac para mi área de trabajo?</li>
+              <li>
+                ¿Cuál será el mejor mouse/teclado/monitor para mis actividades
+                empresariales?
+              </li>
+              <li>
+                ¿Qué aplicaciones facilitarían los procesos de mi empresa?
+              </li>
+            </ul>
+            <br />
+            <p>
+              SD cuenta con conocimientos actualizados y comprobados sobre
+              funciones, características y actualizaciones de aplicaciones
+              (Software) o componentes tecnológicos (Hardware), facilitándoles a
+              los clientes la toma de decisiones complicadas y evitándoles el
+              cometer errores como una mala compra o gastos innecesarios.
+            </p>
+          </div>
+        </article>
+        <div id="particles-js"></div>
+      </main>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       <div class="grupo-1">
         <div class="box">
           <figure>
-            <a href="#">
-              <img src="../../assets/images/Logo SD.png" alt="Logo SD">
+            <a href="../../index.html">
+              <img src="../../assets/images/Logo SD.png" alt="Logo SD" />
             </a>
           </figure>
         </div>
@@ -307,10 +322,24 @@
         <div class="box">
           <h2>CONTÁCTANOS</h2>
           <div class="red-social">
-            <a href="#"><i class="uil uil-facebook"></i></a>
-            <a href="#"><i class="uil uil-instagram-alt"></i></a>
-            <a href="#"><i class="uil uil-linkedin"></i></a>
-            <a href="#"><i class="uil uil-whatsapp-alt"></i></a>
+            <a href="https://www.facebook.com/sdsoldig" target="_blank"
+              ><i class="uil uil-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/sd_solucionesdigitales/"
+              target="_blank"
+              ><i class="uil uil-instagram-alt"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/sd-soluciones-digitales/"
+              target="_blank"
+              ><i class="uil uil-linkedin"></i
+            ></a>
+            <a
+              href="https://wa.me/70046171/?text=Buenas Tardes..."
+              target="_blank"
+              ><i class="uil uil-whatsapp-alt"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -323,7 +352,15 @@
       </div>
     </footer>
 
+    <!-- Scroll up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
 
+    <script src="../../events/scrollreveal.min.js"></script>
+    <script src="../../events/particles.js"></script>
+    <script src="../../custom-particle.js"></script>
     <script src="../../index.js"></script>
+    <script src="code-scoll-support.js"></script>
   </body>
 </html>

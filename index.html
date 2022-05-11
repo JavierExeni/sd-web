@@ -29,9 +29,17 @@
 
   </head>
   <body class="home">
+
+    <div id="preloader">
+      <div class="center">
+        <div class="ring"></div>
+        <span>Cargando...</span>
+      </div>
+    </div>
+
     <header>
       <div class="primary-header flex">
-        <div>
+        <div class="image-logo">
           <img
             src="./assets/images/sd.png"
             alt="space tourism logo"
@@ -51,21 +59,21 @@
             <li class="active">
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="index.html"
+                href="#nosotros"
                 ><span>01</span>Nosotros</a
               >
             </li>
             <li>
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="destination.html"
+                href="#servicios"
                 ><span>02</span>Servicios</a
               >
             </li>
             <li>
               <a
                 class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="crew.html"
+                href="#contactos"
                 ><span>03</span>Contacto</a
               >
             </li>
@@ -103,21 +111,21 @@
           <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="index.html"
+              href="#nosotros"
               ><span>01</span>Nosotros</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="destination.html"
+              href="#servicios"
               ><span>02</span>Servicios</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="crew.html"
+              href="#contactos"
               ><span>03</span>Contacto</a
             >
           </li>
@@ -125,165 +133,166 @@
       </nav>
     </nav>
 
+    <div class="back">
+      <main class="container">
+        <section id="nosotros" class="container-section">
+          <h1 class="title uppercase fs-700" style="margin-bottom: 2rem;">Quienes Somos</h1>
+          <div class="container-section--aboutus">
+            <div class="video-info">
+              <video id="video"><source src="assets/videos/bankai.mp4" type="video/mp4" />
+            </div>
+  
+            <div class="card-glass card-glass--aboutus">
+              <h2 class="numbered-title feature-title"><span>01</span> INFORMACIÓN</h2>
+              <p class="info">
+                Somos una empresa que te brinda servicios en soporte, auditoría y asesoría en tecnologías informáticas y visuales. <br>
+                Contamos con un equipo formado por profesionales en tecnologías y diseño que trabajan con bases en la honestidad, la fidelidad y el compromiso.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis! Exercitationem ipsa non fugiat provident iure sequi, consequuntur ex. Est architecto libero assumenda quis fugiat dolorum voluptatem? Ut, illo eos?
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <div id="servicios" class="service">
+          <!-- <h1 class="title uppercase fs-800" style="margin-bottom: 2rem;">Servicios</h1> -->
+          <section class="grid-container"> 
+            <img class="isoimage" src="assets/images/Soporte IT.png" alt="isometrico">
     
-    <main class="container">
-      <section class="container-section">
-        <h1 class="title uppercase fs-700" style="margin-bottom: 2rem;">Quienes Somos</h1>
-        <div class="container-section--aboutus">
-          <div class="video-info">
-            <video id="video"><source src="assets/videos/bankai.mp4" type="video/mp4" />
-          </div>
-
-          <div class="card-glass card-glass--aboutus">
-            <h2 class="numbered-title feature-title"><span>01</span> INFORMACIÓN</h2>
-            <p class="info">
-              Somos una empresa que te brinda servicios en soporte, auditoría y asesoría en tecnologías informáticas y visuales. <br>
-              Contamos con un equipo formado por profesionales en tecnologías y diseño que trabajan con bases en la honestidad, la fidelidad y el compromiso.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, blanditiis! Exercitationem ipsa non fugiat provident iure sequi, consequuntur ex. Est architecto libero assumenda quis fugiat dolorum voluptatem? Ut, illo eos?
-            </p>
-          </div>
+            <article class="article">
+              <h2 class="numbered-title feature-title"><span>01</span> Soporte IT</h2>
+              <p>
+                Soporte I.T. (Information Technology) es la
+                reparación, mantenimiento, asesoría y asistencia a
+                problemas con PC, laptops, información digital,
+                dispositivos de red y todo lo que conlleva a
+                tecnologías de la información digital.
+              </p>
+              <div class="group-btn">
+                <a href="pages/soporte/soporte.html" class="button">
+                  VER MÁS
+                </a>
+              </div>
+           
+            </article>
+          </section>
+    
+          
+          <section class="grid-container"> 
+            <img class="isoimage" src="assets/images/Seguridad Informática.png" alt="isometrico">
+            <article class="article">
+              <h2 class="numbered-title feature-title"><span>02</span> Seguridad Informática</h2>
+              <p>
+                Un servicio para cuidar tu información. Una vez que
+                una empresa o cliente cuenta con una red interna,
+                acceso a Internet y un soporte técnico adecuado, surge
+                la necesidad de establecer procesos de seguridad de la
+                información y un control minucioso al acceso y
+                políticas de los contenidos, delimitando el acceso tanto
+                como se necesite y desee.
+              </p>
+              <div class="group-btn">
+                <a href="pages/seguridad/seguridad.html" class="button">
+                  VER MÁS
+                </a>
+              </div>
+            </article>
+          </section>
+    
+          <section class="grid-container"> 
+            <img class="isoimage" src="assets/images/SD Life.png" alt="isometrico">
+            <article class="article">
+              <h2 class="numbered-title feature-title"><span>03</span> SD LIFE</h2>
+              <p>
+                Es un servicio integral de diseño de imagen digital e
+                identidad corporativa. Desarrollando y asesorando
+                todos los pasos para la presencia de las empresas en el
+                mundo digital. Contenido para redes sociales,
+                desarrollo de landing pages y páginas web, realidades
+                virtuales, realidades aumentadas, revistas digitales y
+                mucho más. 
+              </p>
+              <div class="group-btn">
+                <a href="pages/sd-life/sd-life.html" class="button">
+                  VER MÁS
+                </a>
+              </div>
+            </article>
+          </section>
+    
+          <section class="grid-container"> 
+            <img class="isoimage" src="assets/images/Apps empresariales.png" alt="isometrico">
+            <article class="article">
+              <h2 class="numbered-title feature-title"><span>04</span> Apps Empresariales</h2>
+              <p>
+                Diseño y desarrollo de una propia red social interna, o
+                de aplicaciones y plataformas para servicios y
+                necesidades empresariales, que permitan la
+                agilización de trabajo, resolución de problemas y
+                obtención de información.
+              </p>
+              <div class="group-btn">
+                <a href="pages/app-empresarial/app.html" class="button">
+                  VER MÁS
+                </a>
+              </div>
+            </article>
+          </section>
+    
+          <section class="grid-container"> 
+            <img class="isoimage" src="assets/images/Redes.png" alt="isometrico">
+            <article class="article">
+              <h2 class="numbered-title feature-title"><span>05</span> Redes</h2>
+              <p>
+                Es el servicio de instalación, revisión y mantenimiento
+                preventivo/correctivo de los puntos de red que
+                permitan la conexión de dos o más dispositivos (PC,
+                laptops, celulares móviles, impresoras, etc.) de manera
+                alámbrica o inalámbrica (conexión WIFI, archivos e
+                impresoras compartidas, equipos multi - usuarios).
+              </p>
+              <div class="group-btn">
+                <a href="pages/redes/redes.html" class="button">
+                  VER MÁS
+                </a>
+              </div>
+            </article>
+          </section>
         </div>
+  
+        <h1 id="contactos" class="title uppercase fs-700" style="margin-bottom: 2rem;">Contáctanos</h1>
+        <section class="contact card-glass">
+          <form onsubmit="sendEmail(); reset(); return false;" class="form">
+            <h1 class="uppercase" style="margin-bottom: 20px;">Ingresa tu comentario</h1>
+            <div class="form__div">
+              <i class="uil uil-user icon"></i>
+              <input type="text" placeholder="Nombre" name="name" id="name" class="form__input" required>
+            </div>
+            <div class="form__div">
+              <i class="uil uil-envelope icon"></i>
+              <input type="text" placeholder="Correo" name="email" id="email" class="form__input" required>
+            </div>
+  
+            <div class="form__div">
+              <i class="uil uil-comment-question"></i>
+              <input type="text" placeholder="Quisiera saber de..." name="title" id="title" class="form__input" required>
+            </div>
+  
+            <div>
+              <textarea name="comment" id="comment" placeholder="Describenos tu consulta" rows="5"></textarea>
+            </div>
+            <input type="submit" class="form__button" value="ENVIAR">
+          </form>
+  
+          <div class="flow map">
+            <img id="map" src="assets/images/map.png" alt="ubicación sd">
+            <div>
+              <p class="text-accent">Dirección</p>
+              <p class="fs-400 uppercase">Canal Isuto Calle La Plata Nº 9</p>
+            </div>
+          </div>
       </section>
-
-      <div class="service">
-        <!-- <h1 class="title uppercase fs-800" style="margin-bottom: 2rem;">Servicios</h1> -->
-        <section class="grid-container"> 
-          <img class="isoimage" src="assets/images/Soporte IT.png" alt="isometrico">
-  
-          <article class="article">
-            <h2 class="numbered-title feature-title"><span>01</span> Soporte IT</h2>
-            <p>
-              Soporte I.T. (Information Technology) es la
-              reparación, mantenimiento, asesoría y asistencia a
-              problemas con PC, laptops, información digital,
-              dispositivos de red y todo lo que conlleva a
-              tecnologías de la información digital.
-            </p>
-            <div class="group-btn">
-              <a href="pages/soporte/soporte.html" class="button">
-                VER MÁS
-              </a>
-            </div>
-         
-          </article>
-        </section>
-  
-        
-        <section class="grid-container"> 
-          <img class="isoimage" src="assets/images/Seguridad Informática.png" alt="isometrico">
-          <article class="article">
-            <h2 class="numbered-title feature-title"><span>02</span> Seguridad Informática</h2>
-            <p>
-              Un servicio para cuidar tu información. Una vez que
-              una empresa o cliente cuenta con una red interna,
-              acceso a Internet y un soporte técnico adecuado, surge
-              la necesidad de establecer procesos de seguridad de la
-              información y un control minucioso al acceso y
-              políticas de los contenidos, delimitando el acceso tanto
-              como se necesite y desee.
-            </p>
-            <div class="group-btn">
-              <a href="pages/seguridad/seguridad.html" class="button">
-                VER MÁS
-              </a>
-            </div>
-          </article>
-        </section>
-  
-        <section class="grid-container"> 
-          <img class="isoimage" src="assets/images/SD Life.png" alt="isometrico">
-          <article class="article">
-            <h2 class="numbered-title feature-title"><span>03</span> SD LIFE</h2>
-            <p>
-              Es un servicio integral de diseño de imagen digital e
-              identidad corporativa. Desarrollando y asesorando
-              todos los pasos para la presencia de las empresas en el
-              mundo digital. Contenido para redes sociales,
-              desarrollo de landing pages y páginas web, realidades
-              virtuales, realidades aumentadas, revistas digitales y
-              mucho más. 
-            </p>
-            <div class="group-btn">
-              <a href="pages/sd-life/sd-life.html" class="button">
-                VER MÁS
-              </a>
-            </div>
-          </article>
-        </section>
-  
-        <section class="grid-container"> 
-          <img class="isoimage" src="assets/images/Apps empresariales.png" alt="isometrico">
-          <article class="article">
-            <h2 class="numbered-title feature-title"><span>04</span> Apps Empresariales</h2>
-            <p>
-              Diseño y desarrollo de una propia red social interna, o
-              de aplicaciones y plataformas para servicios y
-              necesidades empresariales, que permitan la
-              agilización de trabajo, resolución de problemas y
-              obtención de información.
-            </p>
-            <div class="group-btn">
-              <a href="pages/app-empresarial/app.html" class="button">
-                VER MÁS
-              </a>
-            </div>
-          </article>
-        </section>
-  
-        <section class="grid-container"> 
-          <img class="isoimage" src="assets/images/Redes.png" alt="isometrico">
-          <article class="article">
-            <h2 class="numbered-title feature-title"><span>05</span> Redes</h2>
-            <p>
-              Es el servicio de instalación, revisión y mantenimiento
-              preventivo/correctivo de los puntos de red que
-              permitan la conexión de dos o más dispositivos (PC,
-              laptops, celulares móviles, impresoras, etc.) de manera
-              alámbrica o inalámbrica (conexión WIFI, archivos e
-              impresoras compartidas, equipos multi - usuarios).
-            </p>
-            <div class="group-btn">
-              <a href="pages/redes/redes.html" class="button">
-                VER MÁS
-              </a>
-            </div>
-          </article>
-        </section>
-      </div>
-
-      <h1 class="title uppercase fs-700" style="margin-bottom: 2rem;">Contáctanos</h1>
-      <section class="contact card-glass">
-        <form class="form">
-          <h1 class="uppercase" style="margin-bottom: 20px;">Ingresa tu comentario</h1>
-          <div class="form__div">
-            <i class="uil uil-user icon"></i>
-            <input type="text" placeholder="Nombre" name="name" id="name" class="form__input" required>
-          </div>
-          <div class="form__div">
-            <i class="uil uil-envelope icon"></i>
-            <input type="text" placeholder="Correo" name="name" id="name" class="form__input" required>
-          </div>
-
-          <div class="form__div">
-            <i class="uil uil-comment-question"></i>
-            <input type="text" placeholder="Quisiera saber de..." name="name" id="name" class="form__input" required>
-          </div>
-
-          <div>
-            <textarea name="comment" id="comment" placeholder="Describenos tu consulta" rows="5"></textarea>
-          </div>
-          <input type="button" class="form__button" value="ENVIAR">
-        </form>
-
-        <div class="flow map">
-          <img id="map" src="assets/images/map.png" alt="ubicación sd">
-          <div>
-            <p class="text-accent">Dirección</p>
-            <p class="fs-400 uppercase">Canal Isuto Calle La Plata Nº 9</p>
-          </div>
-        </div>
-    </section>
-    </main>
+      </main>
+       <!-- TESTIMONIALS -->
 
     <section class="testimonial">
       <div class="swiper">
@@ -349,6 +358,7 @@
       </div>
     </section>
 
+    <!-- TIPS -->
     <section class="tips">
       <input type="radio" name="dot" id="one">
       <input type="radio" name="dot" id="two">
@@ -477,6 +487,9 @@
         <label for="two" class="two"></label>
       </div>
     </section>
+      
+    <div id="particles-js"></div>
+    </div>
 
     <footer class="footer">
       <div class="grupo-1">
@@ -501,10 +514,23 @@
         <div class="box">
           <h2>CONTÁCTANOS</h2>
           <div class="red-social">
-            <a href="#"><i class="uil uil-facebook"></i></a>
-            <a href="#"><i class="uil uil-instagram-alt"></i></a>
-            <a href="#"><i class="uil uil-linkedin"></i></a>
-            <a href="#"><i class="uil uil-whatsapp-alt"></i></a>
+            <a href="https://www.facebook.com/sdsoldig"
+            target="_blank"
+              ><i class="uil uil-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/sd_solucionesdigitales/"
+            target="_blank"
+              ><i class="uil uil-instagram-alt"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/sd-soluciones-digitales/"
+            target="_blank"
+              ><i class="uil uil-linkedin"></i
+            ></a>
+            <a
+            href="https://wa.me/70046171/?text=Buenas Tardes..."
+            target="_blank"
+              ><i class="uil uil-whatsapp-alt"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -526,10 +552,15 @@
    
     <!-- Our Custom JS -->
     <script src="events/scrollreveal.min.js"></script>
+    <script src="events/particles.js"></script>
+    <script src="custom-particle.js"></script>
     <script src="index.js"></script>
+    <script src="events/code-scrollreveal.js"></script>
     <script src="events/player.js"></script>
     <script src="events/slider.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
     <!-- Initialize Swiper -->
     <script src="events/swiper-slider.js"></script>
   </body>

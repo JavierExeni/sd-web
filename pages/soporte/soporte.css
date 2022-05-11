@@ -62,7 +62,12 @@
 }
 
 .inner-container-sup{
-  margin: 5em 0px;
+  margin: 15em 0px;
+}
+
+.inner-container-sup:first-child{
+  margin-top: 10em;
+  margin-bottom: 15em;
 }
 
 .container .inner-container-sup > h2 {

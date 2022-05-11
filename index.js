@@ -35,21 +35,25 @@ function scrollDown() {
 }
 window.addEventListener("scroll", scrollDown);
 
+function sendEmail() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let title = document.getElementById("title").value;
+  let desc = document.getElementById("comment").value;
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "javierenriquevillagomezexeni98@gmail.com",
+    Password: "porque123",
+    To: "javierenriquevillagomezexeni98@gmail.com",
+    From: email,
+    Subject: title,
+    Body: desc,
+  }).then((message) => alert(message));
+}
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    reset: true
-})
-
-sr.reveal(`.title`,{delay: 600})
-sr.reveal(`.info`,{delay: 700})
-sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
-
-sr.reveal(`.contact`,{origin: 'top', interval: 100})
-sr.reveal(`.isoimage, .video-info, .glass`,{origin: 'left', interval: 100})
-sr.reveal(`.article, .card-glass`,{origin: 'right'})
-sr.reveal(`.case__img`,{origin: 'top'})
-sr.reveal(`.case__data`)
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  this.setTimeout(() => {
+    loader.style.display = "none";
+  }, 1800);
+});
