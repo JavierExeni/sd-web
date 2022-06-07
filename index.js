@@ -41,9 +41,17 @@ function sendEmail() {
   let title = document.getElementById("title").value;
   let desc = document.getElementById("comment").value;
   Email.send({
+    // Host: "mail.sd-bo.com",
+    // Username: "bot@sd-bo.com",
+    // Password: "SDB0livia",
+    // To: "jexeni@sd-bo.com",
+    // From: email,
+    // Subject: title,
+    // Body: desc,
+
     Host: "smtp.gmail.com",
     Username: "javierenriquevillagomezexeni98@gmail.com",
-    Password: "porque123",
+    Password: "xgoxzevamsenrsua",
     To: "javierenriquevillagomezexeni98@gmail.com",
     From: email,
     Subject: title,
@@ -56,4 +64,25 @@ window.addEventListener("load", function () {
   this.setTimeout(() => {
     loader.style.display = "none";
   }, 1800);
+});
+
+const li = document.querySelectorAll(".links");
+const sec = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sec.forEach((section) => {
+    const sectionTop = section.offsetTop;    
+    if (scrollY >= (sectionTop + 150)) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  li.forEach((ltx) => {
+    ltx.classList.remove("active");
+    if (ltx.classList.contains(current)) {
+      ltx.classList.add("active");
+    }
+  });
 });

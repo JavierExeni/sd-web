@@ -39,47 +39,50 @@
 
     <header>
       <div class="primary-header flex">
-        <div class="image-logo">
-          <img
-            src="./assets/images/sd.png"
-            alt="space tourism logo"
-            class="logo"
-          />
+        <div class="nav-header">
+          <div class="image-logo">
+            <img
+              src="./assets/images/Logo SD.png"
+              alt="space tourism logo"
+              class="logo-completo"
+            />
+          </div>
+  
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <span class="sr-only" aria-expanded="false">Menu</span>
+          </button>
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="primary-navigation underline-indicators flex"
+            >
+              <li class="active">
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="#nosotros"
+                  ><span>01</span>Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="#servicios"
+                  ><span>02</span>Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="ff-sans-cond uppercase text-white letter-spacing-2"
+                  href="#contactos"
+                  ><span>03</span>Contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+  
         </div>
-
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-          <span class="sr-only" aria-expanded="false">Menu</span>
-        </button>
-        <nav>
-          <ul
-            id="primary-navigation"
-            data-visible="false"
-            class="primary-navigation underline-indicators flex"
-          >
-            <li class="active">
-              <a
-                class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="#nosotros"
-                ><span>01</span>Nosotros</a
-              >
-            </li>
-            <li>
-              <a
-                class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="#servicios"
-                ><span>02</span>Servicios</a
-              >
-            </li>
-            <li>
-              <a
-                class="ff-sans-cond uppercase text-white letter-spacing-2"
-                href="#contactos"
-                ><span>03</span>Contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-
+  
         <div class="glass">
           <div class="glass-content">
             <h1 class="uppercase h-glass fs-700">Tecnología Humana</h1>
@@ -97,7 +100,7 @@
     <nav id="header-down" class="dis-none flex">
       <div>
         <img
-          src="./assets/images/sd.png"
+          src="./assets/images/Logo SD.png"
           alt="space tourism logo"
           class="logo-show"
         />
@@ -108,21 +111,21 @@
           data-visible="false"
           class="primary-navigation underline-indicators flex"
         >
-          <li class="active">
+          <li class="links nosotros active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="#nosotros"
               ><span>01</span>Nosotros</a
             >
           </li>
-          <li>
+          <li class="links servicios">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="#servicios"
               ><span>02</span>Servicios</a
             >
           </li>
-          <li>
+          <li class="links contactos">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="#contactos"
@@ -153,9 +156,9 @@
           </div>
         </section>
   
-        <div id="servicios" class="service">
+        <section id="servicios" class="service">
           <!-- <h1 class="title uppercase fs-800" style="margin-bottom: 2rem;">Servicios</h1> -->
-          <section class="grid-container"> 
+          <div class="grid-container"> 
             <img class="isoimage" src="assets/images/Soporte IT.png" alt="isometrico">
     
             <article class="article">
@@ -174,10 +177,10 @@
               </div>
            
             </article>
-          </section>
+          </div>
     
           
-          <section class="grid-container"> 
+          <div class="grid-container"> 
             <img class="isoimage" src="assets/images/Seguridad Informática.png" alt="isometrico">
             <article class="article">
               <h2 class="numbered-title feature-title"><span>02</span> Seguridad Informática</h2>
@@ -196,9 +199,9 @@
                 </a>
               </div>
             </article>
-          </section>
+          </div>
     
-          <section class="grid-container"> 
+          <div class="grid-container"> 
             <img class="isoimage" src="assets/images/SD Life.png" alt="isometrico">
             <article class="article">
               <h2 class="numbered-title feature-title"><span>03</span> SD LIFE</h2>
@@ -217,9 +220,9 @@
                 </a>
               </div>
             </article>
-          </section>
+          </div>
     
-          <section class="grid-container"> 
+          <div class="grid-container"> 
             <img class="isoimage" src="assets/images/Apps empresariales.png" alt="isometrico">
             <article class="article">
               <h2 class="numbered-title feature-title"><span>04</span> Apps Empresariales</h2>
@@ -236,9 +239,9 @@
                 </a>
               </div>
             </article>
-          </section>
+          </div>
     
-          <section class="grid-container"> 
+          <div class="grid-container"> 
             <img class="isoimage" src="assets/images/Redes.png" alt="isometrico">
             <article class="article">
               <h2 class="numbered-title feature-title"><span>05</span> Redes</h2>
@@ -256,11 +259,11 @@
                 </a>
               </div>
             </article>
-          </section>
-        </div>
+          </div>
+        </section>
   
-        <h1 id="contactos" class="title uppercase fs-700" style="margin-bottom: 2rem;">Contáctanos</h1>
-        <section class="contact card-glass">
+        <h1 class="title uppercase fs-700" style="margin-bottom: 2rem;">Contáctanos</h1>
+        <section id="contactos" class="contact card-glass">
           <form onsubmit="sendEmail(); reset(); return false;" class="form">
             <h1 class="uppercase" style="margin-bottom: 20px;">Ingresa tu comentario</h1>
             <div class="form__div">
@@ -287,14 +290,14 @@
             <img id="map" src="assets/images/map.png" alt="ubicación sd">
             <div>
               <p class="text-accent">Dirección</p>
-              <p class="fs-400 uppercase">Canal Isuto Calle La Plata Nº 9</p>
+              <p class="fs-400 uppercase">Canal Isuto Calle La Plata Nº 7</p>
             </div>
           </div>
       </section>
       </main>
        <!-- TESTIMONIALS -->
 
-    <section class="testimonial">
+    <div class="testimonial">
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -356,10 +359,10 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
 
     <!-- TIPS -->
-    <section class="tips">
+    <div class="tips">
       <input type="radio" name="dot" id="one">
       <input type="radio" name="dot" id="two">
       <div class="main-card">
@@ -486,7 +489,7 @@
         <label for="one" class=" active one"></label>
         <label for="two" class="two"></label>
       </div>
-    </section>
+    </div>
       
     <div id="particles-js"></div>
     </div>
