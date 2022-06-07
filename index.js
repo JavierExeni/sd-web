@@ -1,17 +1,29 @@
-const nav = document.querySelector(".primary-navigation");
+const nav = document.querySelector(".primary-navigation-sidebar");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-
 navToggle.addEventListener("click", () => {
   const visiblity = nav.getAttribute("data-visible");
   if (visiblity === "false") {
     nav.setAttribute("data-visible", true);
-    navToggle.setAttribute("aria-expanded", true);
+    navToggle.setAttribute("aria-expanded", false);
+    navTogglebar.setAttribute("aria-expanded", true);
   } else {
     nav.setAttribute("data-visible", false);
-    navToggle.setAttribute("aria-expanded", false);
+    navToggle.setAttribute("aria-expanded", true);
+    navTogglebar.setAttribute("aria-expanded", false);
   }
 });
 
+const navTogglebar = document.querySelector(".mobile-nav-toggle-bar");
+navTogglebar.addEventListener("click", () => {
+  const visiblity = nav.getAttribute("data-visible");
+  if (visiblity === "false") {
+    nav.setAttribute("data-visible", true);
+    navTogglebar.setAttribute("aria-expanded", true);
+  } else {
+    nav.setAttribute("data-visible", false);
+    navTogglebar.setAttribute("aria-expanded", false);
+  }
+});
 /*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
@@ -73,8 +85,8 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sec.forEach((section) => {
-    const sectionTop = section.offsetTop;    
-    if (scrollY >= (sectionTop + 150)) {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop + 150) {
       current = section.getAttribute("id");
     }
   });

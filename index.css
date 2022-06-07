@@ -313,6 +313,9 @@ select {
   background: hsl(var(--clr-white) / 0.05);
   backdrop-filter: blur(1.5rem);
   margin-top: 20px;
+  position: fixed;
+  top: -21px;
+  z-index: 900;
 }
 
 .primary-navigation {
@@ -321,7 +324,6 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
- 
 }
 
 .primary-navigation a {
@@ -333,10 +335,16 @@ select {
   margin-right: 0.5em;
 }
 
-.mobile-nav-toggle {
+.mobile-nav-toggle, .mobile-nav-toggle-bar{
   display: none;
   position: fixed !important;
 }
+@media (min-width: 560px) {
+  .primary-navigation-sidebar{
+    display: none;
+  }
+}
+
 
 @media (max-width: 35rem) {
   .primary-navigation {
@@ -352,13 +360,27 @@ select {
     transition: transform 500ms ease-in-out;
   }
 
-  .primary-navigation[data-visible="true"] {
-    transform: translateX(0);
+  .primary-navigation-sidebar {
+    --underline-gap: 0.5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
     background: hsl(var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
   }
 
-  .mobile-nav-toggle {
+  .primary-navigation-sidebar[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-toggle,
+  .mobile-nav-toggle-bar {
     display: block;
     position: absolute;
     z-index: 20000;
@@ -377,6 +399,15 @@ select {
     background-image: url(./assets/icons/icon-close.svg);
   }
 
+  .mobile-nav-toggle-bar {
+    display: none;
+  }
+
+  .mobile-nav-toggle-bar[aria-expanded="true"] {
+    background-image: url(./assets/icons/icon-close.svg);
+    display: block;
+  }
+
   .mobile-nav-toggle:focus-visible {
     outline: 5px solid white;
     outline-offset: 5px;
@@ -393,6 +424,11 @@ select {
   .primary-navigation a > span {
     display: none;
   }
+
+  .nav-header{
+    position: initial;
+    top: 0px;
+  }
 }
 
 @media (min-width: 45em) {
@@ -401,6 +437,10 @@ select {
     width: 100%;
   }
 
+  .nav-header{
+    position: initial;
+    top: 0px;
+  }
   /* .primary-header::after {
     content: "";
     display: block;
@@ -425,6 +465,17 @@ select {
   .logo {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
     width: 400px;
+  }
+
+  .logo-completo{
+    width: 300px;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  .logo-completo{
+    width: 350px;
   }
 }
 

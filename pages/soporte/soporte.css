@@ -91,6 +91,10 @@ ul {
   color: #fd3838;
 }
 
+.glass-suport {
+  margin-top: 7rem;
+}
+
 @media (min-width: 450px) {
   .item-portada:first-child {
     margin-right: 20px;
@@ -103,7 +107,7 @@ ul {
   }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 560px) {
   .glass-suport {
     margin-top: 2rem;
   }
