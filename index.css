@@ -286,8 +286,8 @@ select {
 
 .logo-completo {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-  width: 400px;
-  z-index: 10000;
+  width: 200px;
+  z-index: 100;
 }
 
 .logo-show {
@@ -321,8 +321,7 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
-  /* background: hsl(var(--clr-white) / 0.05);
-  backdrop-filter: blur(1.5rem); */
+ 
 }
 
 .primary-navigation a {
@@ -355,12 +354,14 @@ select {
 
   .primary-navigation[data-visible="true"] {
     transform: translateX(0);
+    background: hsl(var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
   }
 
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    z-index: 2000;
+    z-index: 20000;
     right: 1rem;
     top: 2rem;
     background: transparent;
