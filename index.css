@@ -284,7 +284,14 @@ select {
   z-index: 10000;
 }
 
+.logo-completo-short{
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  width: 100px;
+  z-index: 100;
+}
+
 .logo-completo {
+  display: none;
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
   width: 200px;
   z-index: 100;
@@ -343,6 +350,20 @@ select {
   .primary-navigation-sidebar{
     display: none;
   }
+
+  .logo-completo-short{
+    display: none;
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    width: 100px;
+    z-index: 100;
+  }
+  
+  .logo-completo {
+    display: initial;
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    width: 200px;
+    z-index: 100;
+  }
 }
 
 
@@ -379,13 +400,16 @@ select {
     transform: translateX(0);
   }
 
+  .mobile-nav-toggle-bar{
+    top: 2rem;
+  }
+
   .mobile-nav-toggle,
   .mobile-nav-toggle-bar {
     display: block;
     position: absolute;
     z-index: 20000;
     right: 1rem;
-    top: 2rem;
     background: transparent;
     background-image: url(./assets/icons/icon-hamburger.svg);
     background-repeat: no-repeat;
@@ -736,9 +760,6 @@ header h1 {
 }
 
 /* SERVICIOS */
-.grid-container {
-  /* padding-bottom: max(6rem, 20vh); */
-}
 
 .isoimage {
   width: 300px;
@@ -781,10 +802,6 @@ header h1 {
     display: grid;
     place-items: center;
     margin-bottom: 5em;
-  }
-
-  .service > .grid-container:first-child {
-    /* margin-top: 400px; */
   }
 
   .service > .grid-container:nth-child(even) {
